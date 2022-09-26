@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Colors mentioned below are used in this app. -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cyan">#00838f</color>
+    <color name="textColor">#37474f</color>
+    <color name="totalTextColor">#62757f</color>
+    <color name="background">#eceff1</color>
+    <color name="cardBackground">#eeeeee</color>
+    <color name="textColorHint_grey">#90a4ae</color>
+    <color name="statusBarColor">#00838f</color>
+    <color name="toolbarBackground">#00838f</color>
+    <color name="deleteIcon">#d63500</color>
+    <color name="cancelButton_red">#d63500</color>
+    <color name="saveButton_green">#45bf87</color>
+    <color name="editIcon">#37474f</color>
+    <color name="addItemBackground">#eceff1</color>
+    <color name="buttonBackground">#eeeeee</color>
+
+</resources>
