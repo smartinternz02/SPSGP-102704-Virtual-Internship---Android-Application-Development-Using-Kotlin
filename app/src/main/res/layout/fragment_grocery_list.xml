@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardBackground"
+    tools:context=".GroceryListFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="7"
+            android:id="@+id/HeadingsLL"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/item_name"
+                android:textColor="@color/cyan"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/text_font"
+                android:textStyle="italic|bold"/>
+
+            <TextView
+                android:id="@+id/itemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quantity"
+                android:textColor="@color/cyan"
+                android:gravity="center"
+                android:padding="4dp"
+                android:fontFamily="@font/text_font"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:paddingStart="16dp"
+                android:text="@string/price"
+                android:textColor="@color/cyan"
+                android:padding="4dp"
+                android:fontFamily="@font/text_font"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/itemAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalAmount"
+                android:textColor="@color/cyan"
+                android:gravity="center"
+                android:padding="4dp"
+                android:fontFamily="@font/text_font"
+                android:textStyle="bold|italic"
+                android:layout_weight="1.5"/>
+
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/HeadingsLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/rv_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_add_icon"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/cyan"
+        app:tint="@color/white"
+        android:contentDescription="@string/addFab"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

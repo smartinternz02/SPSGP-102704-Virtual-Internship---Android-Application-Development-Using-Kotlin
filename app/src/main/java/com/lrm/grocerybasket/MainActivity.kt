@@ -1,0 +1,22 @@
+package com.lrm.grocerybasket
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+    private lateinit var navController: NavController
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // Retrieve NavController from the NavHostFragment
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.navHostFragment) as NavHostFragment
+
+        navController = navHostFragment.navController
+
+    }
+}
