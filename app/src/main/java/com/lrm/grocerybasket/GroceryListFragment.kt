@@ -1,9 +1,8 @@
 package com.lrm.grocerybasket
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -54,6 +53,10 @@ class GroceryListFragment : Fragment(){
         binding.addFAB.setOnClickListener {
             val action = GroceryListFragmentDirections.actionGroceryListToAddItemFragment()
             this.findNavController().navigate(action)
+        }
+
+        binding.settingsButton.setOnClickListener {
+            findNavController().navigate(R.id.action_groceryList_to_settingsFragment)
         }
     }
 }

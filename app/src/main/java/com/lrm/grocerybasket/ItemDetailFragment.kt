@@ -1,6 +1,8 @@
 package com.lrm.grocerybasket
 
 import android.os.Bundle
+import android.transition.AutoTransition
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -74,6 +76,11 @@ class ItemDetailFragment: Fragment() {
 
             deleteButton.setOnClickListener{ showConfirmationDialog() }
             editButton.setOnClickListener { editItem() }
+
+            backButton.setOnClickListener{ findNavController().navigateUp() }
+            settingsButton.setOnClickListener {
+                findNavController().navigate(R.id.action_itemDetailFragment_to_settingsFragment)
+            }
         }
     }
 

@@ -31,5 +31,24 @@
     <string name="itemDetail"> Item Detail</string>
     <string name="itemQuantitySub">Item Quantity</string>
     <string name="itemPriceSub">Item Price</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="finger_print">Finger Print</string>
+    <string name="about_app">About App</string>
+
+    <string name="deleteAllDialogTitle">Delete All</string>
+    <string name="app_name_sub">App Name</string>
+    <string name="version">Version</string>
+    <string name="versionNumber">3.0</string>
+    <string name="createdBy">Created By</string>
+    <string name="OwnerName">Rammohan Locharla</string>
+    <string name="google_drive_link">Google Drive</string>
+    <string name="driveLink">Click here<a></a></string>
+    <string name="linksTitle">For Complete code, click on the below links</string>
+    <string name="githubSub">GitHub</string>
+    <string name="gitHub_Link1">Link 1</string>
+    <string name="gitHub_Link2">Link 2</string>
 
 </resources>

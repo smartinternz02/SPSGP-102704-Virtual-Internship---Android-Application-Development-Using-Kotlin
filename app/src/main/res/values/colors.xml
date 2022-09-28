@@ -23,5 +23,7 @@
     <color name="editIcon">#37474f</color>
     <color name="addItemBackground">#eceff1</color>
     <color name="buttonBackground">#eeeeee</color>
+    <color name="backButton">#37474f</color>
+    <color name="darkModeIcon">#1c313a</color>
 
 </resources>
