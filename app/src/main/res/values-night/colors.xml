@@ -18,13 +18,15 @@
     <color name="cyan">#00838f</color>
     <color name="itemHeading_main">#FFFFFFFF</color>
     <color name="textColorHint_grey">#90a4ae</color>
+    <color name="hintTextColor">#FFFFFFFF</color>
+    <color name="editTextColor">#FFFFFFFF</color>
     <color name="deleteIcon">#d63500</color>
     <color name="cancelButton_red">#d63500</color>
     <color name="saveButton_green">#45bf87</color>
     <color name="editIcon">#37474f</color>
     <color name="addItemBackground">#eceff1</color>
-    <color name="buttonBackground">#0e2433</color>
+    <color name="buttonBackground">#15202B</color>
     <color name="backButton">#37474f</color>
-    <color name="darkModeIcon">#1c313a</color>
+    <color name="darkModeIcon">#eeeeee</color>
 
 </resources>

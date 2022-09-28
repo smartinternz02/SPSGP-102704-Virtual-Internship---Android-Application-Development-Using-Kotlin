@@ -59,7 +59,7 @@ class AddItemFragment: Fragment() {
             val action = AddItemFragmentDirections.actionAddItemFragmentToGroceryList()
             findNavController().navigate(action)
 
-            Toast.makeText(context,"Item Saved...",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"Item saved...",Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(context,"Please fill all the fields...",Toast.LENGTH_SHORT).show()
         }
@@ -80,12 +80,12 @@ class AddItemFragment: Fragment() {
             }
             binding.cancelButton.setOnClickListener {
                 findNavController().navigateUp()
-                Toast.makeText(context,"Item Not Saved...",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
             }
 
             binding.backButton.setOnClickListener{
                 findNavController().navigateUp()
-                Toast.makeText(context,"Item Not Saved...",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -100,7 +100,7 @@ class AddItemFragment: Fragment() {
             )
             val action = AddItemFragmentDirections.actionAddItemFragmentToItemDetailFragment(item.id)
             findNavController().navigate(action)
-            Toast.makeText(context,"Edited item saved...",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"Item saved...",Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(context,"Please fill all the fields...",Toast.LENGTH_SHORT).show()
         }
@@ -112,9 +112,16 @@ class AddItemFragment: Fragment() {
             itemName.setText(item.itemName, TextView.BufferType.SPANNABLE)
             itemQuantity.setText(item.itemQuantity.toString(), TextView.BufferType.SPANNABLE)
             itemPrice.setText(item.itemPrice.toString(), TextView.BufferType.SPANNABLE)
+
             saveButton.setOnClickListener{ updateItem() }
-            cancelButton.setOnClickListener { findNavController().navigateUp() }
-            backButton.setOnClickListener{ findNavController().navigateUp() }
+            cancelButton.setOnClickListener {
+                findNavController().navigateUp()
+                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
+            }
+            backButton.setOnClickListener{
+                findNavController().navigateUp()
+                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

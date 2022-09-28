@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardBackground"
+    android:background="@color/background"
     tools:context=".ItemDetailFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -76,7 +76,7 @@
     <com.google.android.material.card.MaterialCardView
     android:id="@+id/itemDetailCardView"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="280dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/appbar"
@@ -117,7 +117,7 @@
                 android:id="@+id/itemName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:text="@string/item_name"
                 android:textColor="@color/textColor"
                 android:fontFamily="@font/text_font"
@@ -130,7 +130,7 @@
             android:id="@+id/itemQuantityLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/itemNameLL"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -150,7 +150,7 @@
                 android:id="@+id/itemQuantity"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:text="@string/quantityShort"
                 android:textColor="@color/textColor"
                 android:fontFamily="@font/text_font"
@@ -163,7 +163,7 @@
             android:id="@+id/itemPriceLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/itemQuantityLL"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -183,7 +183,7 @@
                 android:id="@+id/itemPrice"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:text="@string/currencySymbol"
                 android:textColor="@color/textColor"
                 android:fontFamily="@font/text_font"
@@ -196,7 +196,7 @@
             android:id="@+id/itemTotalAmountLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/itemPriceLL"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -216,7 +216,7 @@
                 android:id="@+id/itemAmount"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:text="@string/currencySymbol"
                 android:textColor="@color/textColor"
                 android:fontFamily="@font/text_font"
