@@ -60,7 +60,7 @@ class SettingsFragment : Fragment() {
             }
 
             gitHubLink1.setOnClickListener{
-                val uri2 = Uri.parse("https://github.com/smartinternz02/SPSGP-102704-Virtual-Internship---Android-Application-Development-Using-Kotlin")
+                val uri2 = Uri.parse("https://github.com/smartinternz02/SPSGP-102704-Virtual-Internship---Android-Application-Development-Using-Kotlin/tree/master")
                 startActivity(Intent(Intent.ACTION_VIEW, uri2))
             }
 
