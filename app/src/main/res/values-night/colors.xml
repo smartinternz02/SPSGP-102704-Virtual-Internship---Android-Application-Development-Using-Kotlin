@@ -7,19 +7,20 @@
     <color name="teal_700">#FF018786</color>
 
     <!-- Colors mentioned below are used in this app. -->
-    <color name="background">#15202B</color>
+    <color name="background">#192734</color>
     <color name="cardBackground">#22303C</color>
     <color name="textColor">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="statusBarColor">#00838f</color>
-    <color name="toolbarBackground">#00838f</color>
+    <color name="statusBarColor">#15202B</color>
+    <color name="toolbarBackground">#15202B</color>
     <color name="fabBackground">#15202B</color>
     <color name="cyan">#00838f</color>
     <color name="itemHeading_main">#FFFFFFFF</color>
     <color name="textColorHint_grey">#90a4ae</color>
     <color name="hintTextColor">#FFFFFFFF</color>
     <color name="editTextColor">#FFFFFFFF</color>
+    <color name="secondaryTextColor">#FFFFFFFF</color>
     <color name="deleteIcon">#d63500</color>
     <color name="cancelButton_red">#d63500</color>
     <color name="saveButton_green">#45bf87</color>

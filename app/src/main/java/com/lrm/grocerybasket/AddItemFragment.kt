@@ -116,11 +116,11 @@ class AddItemFragment: Fragment() {
             saveButton.setOnClickListener{ updateItem() }
             cancelButton.setOnClickListener {
                 findNavController().navigateUp()
-                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Item not edited...",Toast.LENGTH_SHORT).show()
             }
             backButton.setOnClickListener{
                 findNavController().navigateUp()
-                Toast.makeText(context,"Item not saved...",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Item not edited...",Toast.LENGTH_SHORT).show()
             }
         }
     }
