@@ -237,7 +237,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -328,12 +328,13 @@
 
                         <TextView
                             android:id="@+id/ownerName"
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:text="@string/OwnerName"
                             android:layout_marginStart="10dp"
                             android:textColor="@color/textColor"
-                            android:fontFamily="@font/text_font"/>
+                            android:fontFamily="@font/app_name_font"
+                            android:textStyle="italic"/>
 
                     </LinearLayout>
 
