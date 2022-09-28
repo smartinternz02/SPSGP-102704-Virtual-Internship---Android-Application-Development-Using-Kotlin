@@ -1,20 +1,17 @@
 package com.lrm.grocerybasket
 
 import android.content.Intent
-import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
-import android.text.method.LinkMovementMethod
 import android.transition.AutoTransition
 import android.transition.TransitionManager
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.lrm.grocerybasket.databinding.FragmentAddItemBinding
 import com.lrm.grocerybasket.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {

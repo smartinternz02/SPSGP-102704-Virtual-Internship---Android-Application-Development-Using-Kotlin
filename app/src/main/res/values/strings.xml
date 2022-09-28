@@ -45,10 +45,11 @@
     <string name="createdBy">Created By</string>
     <string name="OwnerName">Rammohan Locharla</string>
     <string name="google_drive_link">Google Drive</string>
-    <string name="driveLink">Click here<a></a></string>
+    <string name="driveLink">Click here</string>
     <string name="linksTitle">For Complete code, click on the below links</string>
     <string name="githubSub">GitHub</string>
     <string name="gitHub_Link1">Link 1</string>
     <string name="gitHub_Link2">Link 2</string>
+    <string name="delete_all_items">Delete All Items</string>
 
 </resources>
