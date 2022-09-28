@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.lrm.grocerybasket.databinding.FragmentAddItemBinding
@@ -41,6 +42,14 @@ class SettingsFragment : Fragment() {
 
         binding.apply {
             backButton.setOnClickListener { findNavController().navigateUp() }
+
+            darkThemeSwitch.setOnClickListener {
+                if (darkThemeSwitch.isChecked == true) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                }
+            }
 
             expandAction.setOnClickListener {
                 if(InfoTabLL.visibility == View.GONE) {

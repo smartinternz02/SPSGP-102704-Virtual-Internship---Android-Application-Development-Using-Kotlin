@@ -10,8 +10,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cyan">#00838f</color>
+    <color name="itemHeading_main">#00838f</color>
+    <color name="fabBackground">#00838f</color>
     <color name="textColor">#37474f</color>
-    <color name="totalTextColor">#62757f</color>
     <color name="background">#eceff1</color>
     <color name="cardBackground">#eeeeee</color>
     <color name="textColorHint_grey">#90a4ae</color>
