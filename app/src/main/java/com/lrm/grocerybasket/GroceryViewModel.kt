@@ -1,7 +1,6 @@
 package com.lrm.grocerybasket
 
 import androidx.lifecycle.*
-import androidx.recyclerview.widget.RecyclerView
 import com.lrm.grocerybasket.data.GroceryDao
 import com.lrm.grocerybasket.data.GroceryItem
 import kotlinx.coroutines.launch
