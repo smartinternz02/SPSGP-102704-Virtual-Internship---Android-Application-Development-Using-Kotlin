@@ -1,5 +1,6 @@
 package com.lrm.grocerybasket
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
 
     override fun onCreateView(
@@ -24,5 +26,4 @@ class SplashScreenFragment : Fragment() {
 
         return view
     }
-
 }

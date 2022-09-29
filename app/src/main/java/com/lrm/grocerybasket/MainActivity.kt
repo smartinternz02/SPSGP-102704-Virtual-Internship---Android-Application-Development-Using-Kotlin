@@ -1,7 +1,7 @@
 package com.lrm.grocerybasket
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 
@@ -17,6 +17,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             .findFragmentById(R.id.navHostFragment) as NavHostFragment
 
         navController = navHostFragment.navController
-
     }
 }
