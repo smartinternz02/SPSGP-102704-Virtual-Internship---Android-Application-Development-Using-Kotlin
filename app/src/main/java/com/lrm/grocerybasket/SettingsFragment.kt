@@ -93,7 +93,7 @@ class SettingsFragment : Fragment() {
             .setNegativeButton(getString(R.string.no)) { _, _ -> }
             .setPositiveButton(getString(R.string.yes)) { _, _ ->
                 deleteAllItem()
-                Toast.makeText(context,"Item Deleted...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"All Items Deleted...", Toast.LENGTH_SHORT).show()
             }
             .show()
     }
