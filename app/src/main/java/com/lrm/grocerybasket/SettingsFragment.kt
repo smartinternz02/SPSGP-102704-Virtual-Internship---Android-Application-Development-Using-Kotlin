@@ -8,11 +8,14 @@ import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.lrm.grocerybasket.databinding.FragmentSettingsBinding
+import java.nio.file.Files.delete
 
 class SettingsFragment : Fragment() {
 
@@ -48,6 +51,10 @@ class SettingsFragment : Fragment() {
                 }
             }
 
+            deleteAllCard.setOnClickListener{
+                showConfirmationDialog()
+            }
+
             expandAction.setOnClickListener {
                 if(InfoTabLL.visibility == View.GONE) {
                     InfoTabLL.visibility = View.VISIBLE
@@ -75,5 +82,24 @@ class SettingsFragment : Fragment() {
                 startActivity(Intent(Intent.ACTION_VIEW, uri3))
             }
         }
+    }
+
+    //Displays an alert dialog to get the user's confirmation before deleting the item.
+    private fun showConfirmationDialog() {
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(getString(R.string.deleteAllDialogTitle))
+            .setMessage(getString(R.string.deleteAll_question))
+            .setCancelable(false)
+            .setNegativeButton(getString(R.string.no)) { _, _ -> }
+            .setPositiveButton(getString(R.string.yes)) { _, _ ->
+                deleteAllItem()
+                Toast.makeText(context,"Item Deleted...", Toast.LENGTH_SHORT).show()
+            }
+            .show()
+    }
+
+    private fun deleteAllItem() {
+        viewModel.deleteAllItems()
+        findNavController().navigateUp()
     }
 }

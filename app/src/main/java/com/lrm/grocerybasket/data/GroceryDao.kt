@@ -25,4 +25,7 @@ interface GroceryDao {
 
     @Query("SELECT * from grocery_items ORDER BY id ASC")
     fun getItems(): Flow<List<GroceryItem>>
+
+    @Query("DELETE FROM grocery_items")
+    suspend fun deleteAll()
 }

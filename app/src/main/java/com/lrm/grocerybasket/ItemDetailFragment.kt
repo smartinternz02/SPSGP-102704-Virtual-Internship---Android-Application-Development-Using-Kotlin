@@ -52,7 +52,6 @@ class ItemDetailFragment: Fragment() {
                 Toast.makeText(context,"Item Deleted...",Toast.LENGTH_SHORT).show()
             }
             .show()
-
     }
 
     private fun deleteItem() {
@@ -63,6 +62,18 @@ class ItemDetailFragment: Fragment() {
     private fun editItem() {
         val action = ItemDetailFragmentDirections.actionItemDetailFragmentToAddItemFragment(item.id)
         this.findNavController().navigate(action)
+    }
+
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val id = navigationArgs.itemId
+        viewModel.retrieveItem(id).observe(this.viewLifecycleOwner) { selectedItem ->
+            item = selectedItem
+            bind(item)
+        }
     }
 
     private fun bind(item: GroceryItem) {
@@ -84,20 +95,8 @@ class ItemDetailFragment: Fragment() {
         }
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val id = navigationArgs.itemId
-        viewModel.retrieveItem(id).observe(this.viewLifecycleOwner) { selectedItem ->
-            item = selectedItem
-            bind(item)
-        }
-
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
 }

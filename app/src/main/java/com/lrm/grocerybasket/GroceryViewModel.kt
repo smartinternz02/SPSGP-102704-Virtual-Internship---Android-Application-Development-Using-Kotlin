@@ -78,6 +78,12 @@ class GroceryViewModel(private val groceryDao: GroceryDao): ViewModel() {
         updateItem(updatedItem)
     }
 
+    fun deleteAllItems() {
+        viewModelScope.launch {
+            groceryDao.deleteAll()
+        }
+    }
+
 }
 
 class GroceryViewModelFactory(private val groceryDao: GroceryDao): ViewModelProvider.Factory {

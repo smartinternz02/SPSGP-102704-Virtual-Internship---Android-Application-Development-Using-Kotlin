@@ -25,6 +25,7 @@
 
     <string name="deleteDialogTitle">Delete Item</string>
     <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="deleteAll_question">Are you sure you want to delete all?</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
 
@@ -38,7 +39,7 @@
     <string name="finger_print">Finger Print</string>
     <string name="about_app">About App</string>
 
-    <string name="deleteAllDialogTitle">Delete All</string>
+    <string name="deleteAllDialogTitle">Delete All Items</string>
     <string name="app_name_sub">App Name</string>
     <string name="version">Version</string>
     <string name="versionNumber">3.0</string>
